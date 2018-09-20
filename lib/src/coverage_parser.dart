@@ -52,8 +52,9 @@ class CoverageParser implements ReportParser {
 
 String _parsePackageName(String filePath) {
   Uri uri = Uri.parse(filePath);
+  // Skip dart: core libraries and file references (used for tests).
   if (uri.scheme != 'package') {
-    throw ArgumentError.value(filePath, 'packageUri', 'Not a package URI');
+    return null;
   }
 
   final firstSlash = uri.path.indexOf('/');

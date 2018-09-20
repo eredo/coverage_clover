@@ -77,6 +77,16 @@ void main() {
                     12,
                     1,
                   ]
+                },
+                {
+                  'source': 'dart:core/math.dart',
+                  'script': {},
+                  'hits': [
+                    10,
+                    0,
+                    12,
+                    1,
+                  ]
                 }
               ]
             }),

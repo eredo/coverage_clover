@@ -16,5 +16,5 @@ on how to receive these reports see: [coverage](https://github.com/dart-lang/cov
 documentation.
 
 ```
-pub run coverage_clover:format_clover -c coverage.json -t test.json -o clover.xml
+pub run coverage_clover format -c coverage.json -t test.json -o clover.xml
 ```
