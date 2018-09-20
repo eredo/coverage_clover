@@ -1,0 +1,18 @@
+name: coverage_clover
+description: A tool to convert dart coverage and test report output into clover format.
+
+environment:
+  sdk: '>=2.0.0 <3.0.0'
+
+dependencies:
+  args: ^1.4.3
+  io: ^0.3.3
+  glob: ^1.1.5
+  path: '>=1.3.0 <2.0.0'
+  xml: ^3.2.1
+  meta: ^1.1.6
+  pedantic: ^1.1.0
+
+dev_dependencies:
+  test: ^1.3.0
+  dart_coveralls: ^0.6.0
