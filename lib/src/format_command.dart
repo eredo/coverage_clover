@@ -10,6 +10,7 @@ import 'clover_report.dart';
 import 'parse_configuration.dart';
 import 'report_parser.dart';
 import 'coverage_parser.dart';
+import 'code_statistics_parser.dart';
 
 class FormatCommand extends Command<ExitCode> {
   @override
@@ -21,6 +22,7 @@ class FormatCommand extends Command<ExitCode> {
 
   final List<ReportParser> _parser = [
     CoverageParser(),
+    CodeStatisticsParser(),
   ];
 
   FormatCommand() {
