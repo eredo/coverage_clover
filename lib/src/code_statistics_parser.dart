@@ -10,7 +10,7 @@ import 'report_parser.dart';
 class CodeStatisticsParser implements ReportParser {
   @override
   Future<void> parse(ParseConfiguration config, CloverReport report) {
-    final files = Glob('{lib,bin,test}/**.dart');
+    final files = Glob('**.dart');
     final completer = Completer<void>();
 
     files
